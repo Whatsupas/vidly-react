@@ -1,7 +1,6 @@
 import React from "react";
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
-import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core/styles";
 import { NavLink, Link } from "react-router-dom";
 import { css } from "glamor"; // npm install glamor --save
@@ -47,7 +46,7 @@ const Navbar = () => {
     <div className={classes.root}>
       <AppBar position="static">
         <Toolbar>
-          <Link to="/" variant="subtitle2" {...rootRule}>
+          <Link to="/home-page" variant="subtitle2" {...rootRule}>
             Vidly
           </Link>
           <NavLink to="/movies" activeStyle={activeLink} {...rule}>
