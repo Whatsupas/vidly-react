@@ -15,12 +15,12 @@ function App() {
       <Navbar />
       <Switch>
         <Route path="/home-page" component={HomePage} />
+        <Route path="/" exact component={HomePage} />
         <Route path="/movies/:id" component={MovieForm} />
         <Route path="/movies" component={Movies} />
         <Route path="/customers" component={Customers} />
         <Route path="/rentals" component={Rentals} />
         <Route path="/not-found" component={NotFound} />
-        <Route path="/" exact component={HomePage} />
         <Route path="/movie-form" component={MovieForm} />
         <Redirect to="/not-found" />
       </Switch>
